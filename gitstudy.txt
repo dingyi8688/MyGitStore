@@ -18,3 +18,84 @@ git statusÃüÁî¿ÉÒÔÈÃÎÒÃÇÊ±¿ÌÕÆÎÕ²Ö¿âµ±Ç°µÄ×´Ì¬£¬Êä³ö¸æËßÎÒÃÇ£¬XXX±»ÐÞ¸Ä¹ýÁË£¬µ«»
 ÔÚÖ´ÐÐµÚ¶þ²½git commitÖ®Ç°£¬ÎÒÃÇÔÙÔËÐÐgit status¿´¿´µ±Ç°²Ö¿âµÄ×´Ì¬£º
 git commit -m "add distributed"
 ÎÒÃÇÔÙÓÃgit statusÃüÁî¿´¿´²Ö¿âµÄµ±Ç°×´Ì¬£º
+
+
+ÔÚGitÖÐ£¬ÎÒÃÇÓÃgit logÃüÁî²é¿´£º
+Èç¹ûÏÓÊä³öÐÅÏ¢Ì«¶à£¬¿´µÃÑÛ»¨çÔÂÒµÄ£¬¿ÉÒÔÊÔÊÔ¼ÓÉÏ--pretty=oneline²ÎÊý£º
+
+Ê×ÏÈ£¬Git±ØÐëÖªµÀµ±Ç°°æ±¾ÊÇÄÄ¸ö°æ±¾£¬ÔÚGitÖÐ£¬ÓÃHEAD±íÊ¾µ±Ç°°æ±¾£¬Ò²¾ÍÊÇ×îÐÂµÄÌá½»1094adb...£¨×¢ÒâÎÒµÄÌá½»IDºÍÄãµÄ¿Ï¶¨²»Ò»Ñù£©£¬ÉÏÒ»¸ö°æ±¾¾ÍÊÇHEAD^£¬ÉÏÉÏÒ»¸ö°æ±¾¾ÍÊÇHEAD^^£¬µ±È»ÍùÉÏ100¸ö°æ±¾Ð´100¸ö^±È½ÏÈÝÒ×Êý²»¹ýÀ´£¬ËùÒÔÐ´³ÉHEAD~100¡£
+
+ÏÖÔÚ£¬ÎÒÃÇÒª°Ñµ±Ç°°æ±¾append GPL»ØÍËµ½ÉÏÒ»¸ö°æ±¾add distributed£¬¾Í¿ÉÒÔÊ¹ÓÃgit resetÃüÁî£º
+×îÐÂµÄÄÇ¸ö°æ±¾append GPLÒÑ¾­¿´²»µ½ÁË£¡ºÃ±ÈÄã´Ó21ÊÀ¼Í×øÊ±¹â´©Ëó»úÀ´µ½ÁË19ÊÀ¼Í£¬ÏëÔÙ»ØÈ¥ÒÑ¾­»Ø²»È¥ÁË£¬Ö×Ã´°ì£¿
+
+°ì·¨ÆäÊµ»¹ÊÇÓÐµÄ£¬Ö»ÒªÉÏÃæµÄÃüÁîÐÐ´°¿Ú»¹Ã»ÓÐ±»¹Øµô£¬Äã¾Í¿ÉÒÔË³×ÅÍùÉÏÕÒ°¡ÕÒ°¡£¬ÕÒµ½ÄÇ¸öappend GPLµÄcommit idÊÇ1094adb...£¬ÓÚÊÇ¾Í¿ÉÒÔÖ¸¶¨»Øµ½Î´À´µÄÄ³¸ö°æ±¾£º
+
+$ git reset --hard 1094a
+HEAD is now at 83b0afe append GPL
+°æ±¾ºÅÃ»±ØÒªÐ´È«£¬Ç°¼¸Î»¾Í¿ÉÒÔÁË£¬Git»á×Ô¶¯È¥ÕÒ¡£µ±È»Ò²²»ÄÜÖ»Ð´Ç°Ò»Á½Î»£¬ÒòÎªGit¿ÉÄÜ»áÕÒµ½¶à¸ö°æ±¾ºÅ£¬¾ÍÎÞ·¨È·¶¨ÊÇÄÄÒ»¸öÁË¡£
+
+ÔÚGitÖÐ£¬×ÜÊÇÓÐºó»ÚÒ©¿ÉÒÔ³ÔµÄ¡£µ±ÄãÓÃ$ git reset --hard HEAD^»ØÍËµ½add distributed°æ±¾Ê±£¬ÔÙÏë»Ö¸´µ½append GPL£¬¾Í±ØÐëÕÒµ½append GPLµÄcommit id¡£
+GitÌá¹©ÁËÒ»¸öÃüÁîgit reflogÓÃÀ´¼ÇÂ¼ÄãµÄÃ¿Ò»´ÎÃüÁî£º
+
+ÏÖÔÚ×Ü½áÒ»ÏÂ£º
+
+HEADÖ¸ÏòµÄ°æ±¾¾ÍÊÇµ±Ç°°æ±¾£¬Òò´Ë£¬GitÔÊÐíÎÒÃÇÔÚ°æ±¾µÄÀúÊ·Ö®¼ä´©Ëó£¬Ê¹ÓÃÃüÁîgit reset --hard commit_id¡£
+
+´©ËóÇ°£¬ÓÃgit log¿ÉÒÔ²é¿´Ìá½»ÀúÊ·£¬ÒÔ±ãÈ·¶¨Òª»ØÍËµ½ÄÄ¸ö°æ±¾¡£
+
+ÒªÖØ·µÎ´À´£¬ÓÃgit reflog²é¿´ÃüÁîÀúÊ·£¬ÒÔ±ãÈ·¶¨Òª»Øµ½Î´À´µÄÄÄ¸ö°æ±¾¡£
+¹¤×÷ÇøÓÐÒ»¸öÒþ²ØÄ¿Â¼.git£¬Õâ¸ö²»Ëã¹¤×÷Çø£¬¶øÊÇGitµÄ°æ±¾¿â¡£
+
+GitµÄ°æ±¾¿âÀï´æÁËºÜ¶à¶«Î÷£¬ÆäÖÐ×îÖØÒªµÄ¾ÍÊÇ³ÆÎªstage£¨»òÕß½Ðindex£©µÄÔÝ´æÇø£¬»¹ÓÐGitÎªÎÒÃÇ×Ô¶¯´´½¨µÄµÚÒ»¸ö·ÖÖ§master£¬ÒÔ¼°Ö¸ÏòmasterµÄÒ»¸öÖ¸Õë½ÐHEAD¡£
+Ç°Ãæ½²ÁËÎÒÃÇ°ÑÎÄ¼þÍùGit°æ±¾¿âÀïÌí¼ÓµÄÊ±ºò£¬ÊÇ·ÖÁ½²½Ö´ÐÐµÄ£º
+
+µÚÒ»²½ÊÇÓÃgit add°ÑÎÄ¼þÌí¼Ó½øÈ¥£¬Êµ¼ÊÉÏ¾ÍÊÇ°ÑÎÄ¼þÐÞ¸ÄÌí¼Óµ½ÔÝ´æÇø£»
+Git¹ÜÀíµÄÊÇÐÞ¸Ä£¬µ±ÄãÓÃgit addÃüÁîºó£¬ÔÚ¹¤×÷ÇøµÄµÚÒ»´ÎÐÞ¸Ä±»·ÅÈëÔÝ´æÇø£¬×¼±¸Ìá½»£¬µ«ÊÇ£¬ÔÚ¹¤×÷ÇøµÄµÚ¶þ´ÎÐÞ¸Ä²¢Ã»ÓÐ·ÅÈëÔÝ´æÇø£¬ËùÒÔ£¬git commitÖ»¸ºÔð°ÑÔÝ´æÇøµÄÐÞ¸ÄÌá½»ÁË£¬Ò²¾ÍÊÇµÚÒ»´ÎµÄÐÞ¸Ä±»Ìá½»ÁË£¬µÚ¶þ´ÎµÄÐÞ¸Ä²»»á±»Ìá½»¡£
+
+Ìá½»ºó£¬ÓÃgit diff HEAD -- readme.txtÃüÁî¿ÉÒÔ²é¿´¹¤×÷ÇøºÍ°æ±¾¿âÀïÃæ×îÐÂ°æ±¾µÄÇø±ð
+
+Äã¿ÉÒÔ·¢ÏÖ£¬Git»á¸æËßÄã£¬git checkout -- file¿ÉÒÔ¶ªÆú¹¤×÷ÇøµÄÐÞ¸Ä£º
+ÃüÁîgit checkout -- readme.txtÒâË¼¾ÍÊÇ£¬°Ñreadme.txtÎÄ¼þÔÚ¹¤×÷ÇøµÄÐÞ¸ÄÈ«²¿³·Ïú£¬ÕâÀïÓÐÁ½ÖÖÇé¿ö£º
+
+Ò»ÖÖÊÇreadme.txt×ÔÐÞ¸Äºó»¹Ã»ÓÐ±»·Åµ½ÔÝ´æÇø£¬ÏÖÔÚ£¬³·ÏúÐÞ¸Ä¾Í»Øµ½ºÍ°æ±¾¿âÒ»Ä£Ò»ÑùµÄ×´Ì¬£»
+
+Ò»ÖÖÊÇreadme.txtÒÑ¾­Ìí¼Óµ½ÔÝ´æÇøºó£¬ÓÖ×÷ÁËÐÞ¸Ä£¬ÏÖÔÚ£¬³·ÏúÐÞ¸Ä¾Í»Øµ½Ìí¼Óµ½ÔÝ´æÇøºóµÄ×´Ì¬¡£
+
+×ÜÖ®£¬¾ÍÊÇÈÃÕâ¸öÎÄ¼þ»Øµ½×î½üÒ»´Îgit commit»ògit addÊ±µÄ×´Ì¬¡£
+
+
+Git¸ú×Ù²¢¹ÜÀíµÄÊÇÐÞ¸Ä£¬¶ø·ÇÎÄ¼þ,Ã¿´ÎÐÞ¸Ä£¬Èç¹û²»ÓÃgit addµ½ÔÝ´æÇø£¬ÄÇ¾Í²»»á¼ÓÈëµ½commitÖÐ¡£
+
+
+µÚ¶þ²½ÊÇÓÃgit commitÌá½»¸ü¸Ä£¬Êµ¼ÊÉÏ¾ÍÊÇ°ÑÔÝ´æÇøµÄËùÓÐÄÚÈÝÌá½»µ½µ±Ç°·ÖÖ§¡£
+ËùÒÔ£¬git addÃüÁîÊµ¼ÊÉÏ¾ÍÊÇ°ÑÒªÌá½»µÄËùÓÐÐÞ¸Ä·Åµ½ÔÝ´æÇø£¨Stage£©£¬È»ºó£¬Ö´ÐÐgit commit¾Í¿ÉÒÔÒ»´ÎÐÔ°ÑÔÝ´æÇøµÄËùÓÐÐÞ¸ÄÌá½»µ½·ÖÖ§¡£
+ÓÃÃüÁîgit reset HEAD <file>¿ÉÒÔ°ÑÔÝ´æÇøµÄÐÞ¸Ä³·Ïúµô£¨unstage£©£¬ÖØÐÂ·Å»Ø¹¤×÷Çø£º
+git resetÃüÁî¼È¿ÉÒÔ»ØÍË°æ±¾£¬Ò²¿ÉÒÔ°ÑÔÝ´æÇøµÄÐÞ¸Ä»ØÍËµ½¹¤×÷Çø¡£µ±ÎÒÃÇÓÃHEADÊ±£¬±íÊ¾×îÐÂµÄ°æ±¾¡£
+³¡¾°1£ºµ±Äã¸ÄÂÒÁË¹¤×÷ÇøÄ³¸öÎÄ¼þµÄÄÚÈÝ£¬ÏëÖ±½Ó¶ªÆú¹¤×÷ÇøµÄÐÞ¸ÄÊ±£¬ÓÃÃüÁîgit checkout -- file¡£
+
+³¡¾°2£ºµ±Äã²»µ«¸ÄÂÒÁË¹¤×÷ÇøÄ³¸öÎÄ¼þµÄÄÚÈÝ£¬»¹Ìí¼Óµ½ÁËÔÝ´æÇøÊ±£¬Ïë¶ªÆúÐÞ¸Ä£¬·ÖÁ½²½£¬µÚÒ»²½ÓÃÃüÁîgit reset HEAD <file>£¬¾Í»Øµ½ÁË³¡¾°1£¬µÚ¶þ²½°´³¡¾°1²Ù×÷¡£
+
+³¡¾°3£ºÒÑ¾­Ìá½»ÁË²»ºÏÊÊµÄÐÞ¸Äµ½°æ±¾¿âÊ±£¬ÏëÒª³·Ïú±¾´ÎÌá½»£¬²Î¿¼°æ±¾»ØÍËÒ»½Ú£¬²»¹ýÇ°ÌáÊÇÃ»ÓÐÍÆËÍµ½Ô¶³Ì¿â¡£
+
+ÔÚGitÖÐ£¬É¾³ýÒ²ÊÇÒ»¸öÐÞ¸Ä²Ù×÷£¬ÎÒÃÇÊµÕ½Ò»ÏÂ£¬ÏÈÌí¼ÓÒ»¸öÐÂÎÄ¼þtest.txtµ½Git²¢ÇÒÌá½»£º
+Ò»ÊÇÈ·ÊµÒª´Ó°æ±¾¿âÖÐÉ¾³ý¸ÃÎÄ¼þ£¬ÄÇ¾ÍÓÃÃüÁîgit rmÉ¾µô£¬²¢ÇÒgit commit£º
+$ git commit -m "remove test.txt"
+ÏÈÊÖ¶¯É¾³ýÎÄ¼þ£¬È»ºóÊ¹ÓÃgit rm <file>ºÍgit add<file>Ð§¹ûÊÇÒ»ÑùµÄ¡£
+ÁíÒ»ÖÖÇé¿öÊÇÉ¾´íÁË£¬ÒòÎª°æ±¾¿âÀï»¹ÓÐÄØ£¬ËùÒÔ¿ÉÒÔºÜÇáËÉµØ°ÑÎóÉ¾µÄÎÄ¼þ»Ö¸´µ½×îÐÂ°æ±¾£º
+
+$ git checkout -- test.txt
+git checkoutÆäÊµÊÇÓÃ°æ±¾¿âÀïµÄ°æ±¾Ìæ»»¹¤×÷ÇøµÄ°æ±¾£¬ÎÞÂÛ¹¤×÷ÇøÊÇÐÞ¸Ä»¹ÊÇÉ¾³ý£¬¶¼¿ÉÒÔ¡°Ò»¼ü»¹Ô­¡±¡£
+
+ ×¢Òâ£º´ÓÀ´Ã»ÓÐ±»Ìí¼Óµ½°æ±¾¿â¾Í±»É¾³ýµÄÎÄ¼þ£¬ÊÇÎÞ·¨»Ö¸´µÄ£¡
+
+ ¡­or create a new repository on the command line
+echo "# MyGitStore" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/dingyi8688/MyGitStore.git
+git push -u origin master
+
+¡­or push an existing repository from the command line
+git remote add origin https://github.com/dingyi8688/MyGitStore.git
+git push -u origin master
