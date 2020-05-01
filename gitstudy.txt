@@ -13,3 +13,8 @@ $ git status
 git status命令可以让我们时刻掌握仓库当前的状态，输出告诉我们，XXX被修改过了，但还没有准备提交的修改。
 虽然Git告诉我们readme.txt被修改了，但如果能看看具体修改了什么内容，自然是很好的。
 所以，需要用git diff这个命令看看：
+
+提交修改和提交新文件是一样的两步，第一步是git add
+在执行第二步git commit之前，我们再运行git status看看当前仓库的状态：
+git commit -m "add distributed"
+我们再用git status命令看看仓库的当前状态：
